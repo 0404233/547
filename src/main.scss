@@ -2,16 +2,10 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-// #div {
-//   background-color: red;
-// }
+.container main-nav {
+  border: solid red 3px;
+}
 
-// .div {background-color: green;}
-
-// div {background-color: aquamarine}
-
-// [data-value="green"] {
-//   background-color: gold;
-// }
-
-* {background-color: bisque;}
+#container main-nav {
+  display: flex1;
+}
