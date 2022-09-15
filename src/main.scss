@@ -1,29 +1,15 @@
+@import "partials/anchor.scss";
+
 body * {
   outline: 1px solid lightgrey;
 }
 
-.container {
-  border: solid red 3px;
+.margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.main-nav ul {
-  display: flex;
-}
-
-.main-nav li {
-  width: 100px;
-  }
-
-.sub-menu {
-  border: dashed green;
-}
-
-.blocks p {
-color: green;
-}
-
-.inline {
-  display: flex;
-  border: double green 5px;
-  color: blue;
+.size {
+  font-size: 25px;
+  color: slateblue;
 }
