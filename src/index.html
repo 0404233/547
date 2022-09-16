@@ -9,7 +9,11 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <a class="anchor" href="#anchor">Scroll to anchor</a>
+    @@include("partials/anchor.html", {"text": "One"})
+    @@include("partials/anchor.html", {"text": "Two"})
+    @@include("partials/anchor.html", {"text": "Three"})
+    <a class="yes" href="#smth">Scroll to anchor</a>
+  </div>
     <div class="margin">
     <a class="size" href="https://www.youtube.com/" target="_self">YouTube</a>
     </div>
@@ -26,7 +30,7 @@
       alt="hreh"
       >
      <div>
-      <a name="anchor">
+      <a name="smth">
        <img
         src="img/8ba283897b9ad414c929ca1a8630b4bd.jpg"
         alt="cute cat"
