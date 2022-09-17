@@ -1,3 +1,31 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.list {
+position: absolute;
+width: 481px;
+height: 698px;
+background: #FFFFFF;
+}
+
+.main {
+
+}
+
+.one {
+  display: flex;
+  justify-content: space-around;
+  height: 49px;
+  background-color: #358765;
+}
+
+.two {
+  display: flex;
+  justify-content: space-around;
+  height: 116px;
+}
+
+.bb {
+  background-color: red;
+}
