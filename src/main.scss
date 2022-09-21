@@ -1,5 +1,60 @@
-body * {
-  outline: 1px solid lightgrey;
+// body * {
+//   outline: 1px solid lightgrey;
+// }
+
+// .simple-block {
+//   width: 200px;
+//   height: 200px;
+//   background-color: tomato;
+// }
+
+// .relative {
+//   position: relative;
+//   top: 50px;
+//   left: 50px;
+// }
+
+// .main-btn {
+//   padding: 15px 40px;
+//   font-size: 18px;
+// }
+
+// .main-btn:hover {
+//   position: relative;
+//   bottom: 20px;
+//   left: 20px;
+// }
+
+// .bg-green {
+//   background-color: aquamarine;
+// }
+
+// .absolute-wrapper {
+
+// }
+
+// .absolute {
+//   position: absolute;
+// }
+
+.bg-gray {
+  background-color: lightgray;
 }
 
+// // .fixed {
+// //   position: fixed;
+// //   top: 0;
+// // }
 
+.sticky-wrapper {
+  height: 1000px;
+}
+
+.sticky {
+  position: sticky;
+  top: 25px;
+}
+
+.stub {
+  height: 100vh;
+}
