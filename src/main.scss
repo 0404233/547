@@ -1,65 +1,7 @@
-// body * {
-//   outline: 1px solid lightgrey;
-// }
-
-.cc {
-  height: 500px;
-}
-
-.cc .float:first-child {
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
-  width: 300px;
-  float: left;
-}
-
-.cc .float:nth-child(2n) {
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
-  width: 300px;
-  float: right;
-}
-
-.border {
-  border: 5px solid red;
-  // outline: 5px solid;
-  padding: 50px;
-  border-radius: 50px;
-}
-
-.float::before {
-  content: "Something";
-  display: block;
-  background-color: tomato;
-  height: 30px;
-}
-
-.pseudo {
-  height: 5px;
-  // background-color: red;
-}
-
-.pseudo .element:first-child {
-  float: right;
-  width: 300px;
-  background-color: greenyellow;
-}
-
-.pseudo .element:nth-child(2n) {
-  float: left;
-  width: 300px;
-  background-color: greenyellow;
-}
-
-.text-conter {
-  display: inline-block;
-}
-
-.pseudo::before {
-  content: "";
-  display: block;
-  height: 50px;
-  background-color: purple;
-}
+div.menu-bar ul ul {
+    display: none;
+  }
+  
+  div.menu-bar li:hover > ul {
+    display: block;
+  }
