@@ -1,60 +1,41 @@
-// body * {
-//   outline: 1px solid lightgrey;
-// }
+.dropbtn {
+    background-color: #8d2fcc;
+    color: white;
+    padding: 16px 50px;
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+  }
 
-// .simple-block {
-//   width: 200px;
-//   height: 200px;
-//   background-color: tomato;
-// }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
 
-// .relative {
-//   position: relative;
-//   top: 50px;
-//   left: 50px;
-// }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 130.2px;
+  }
 
-// .main-btn {
-//   padding: 15px 40px;
-//   font-size: 18px;
-// }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
 
-// .main-btn:hover {
-//   position: relative;
-//   bottom: 20px;
-//   left: 20px;
-// }
-
-// .bg-green {
-//   background-color: aquamarine;
-// }
-
-// .absolute-wrapper {
-
-// }
-
-// .absolute {
-//   position: absolute;
-// }
-
-.bg-gray {
-  background-color: lightgray;
+  .dropdown-content a:hover {
+    background-color: #ddd;
 }
 
-// // .fixed {
-// //   position: fixed;
-// //   top: 0;
-// // }
-
-.sticky-wrapper {
-  height: 1000px;
+  .dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.sticky {
-  position: sticky;
-  top: 25px;
-}
-
-.stub {
-  height: 100vh;
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
