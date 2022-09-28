@@ -8,19 +8,34 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <div class="dropdown">
-      <p class="dropbtn">Data</p>
-      <div class="dropdown-content">
-        <p> Name
-          <input type="text"><br>
-        </p>
-        <p> Phone
-          <input type="text"><br>
-        </p>
-        <p> Address
-          <input type="text"><br>
-        </p>
-      </div>
+    <div class="wrapper">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li>
+            <p class="menu-input">Data</p>
+            <ul class="sub-menu-list">
+              <li>Name
+                <input type="text" placeholder="Name" class="input">
+              </li>
+              <li>Address
+                <input type="text" placeholder="Address" class="input">
+              </li>
+              <li>Number
+                <input type="text" placeholder="Number" class="input">
+              </li>
+              <li>
+                <p class="sub-sub-menu-input">Log in</p>
+                <ul class="sub-sub-menu-list">
+                  <li>Login
+                    <input type="text" placeholder="Login" class="input">
+                  </li>
+                  <li>Password
+                    <input type="password" placeholder="Password" class="input">
+                  </li>
+                </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>
