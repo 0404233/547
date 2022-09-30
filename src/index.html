@@ -10,13 +10,30 @@
   <body>
     <header>
       <div class="container header">
-        @@include("../partials/logo/_logo.html")
-        <nav class="main-menu">menu</nav>
+        @@include("./partials/logo/_logo.html")
+        <nav class="main-menu">
+          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"home"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"about"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"work"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"blog"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"contact"})
+        </nav>
       </div>
     </header>
+    <main>
     <div class="slider">
+      <!-- @@include("./partials/slider/_slider.html") -->
       <div class="container">
-        Slider
+        <div class="slider-content">
+          <div class="slider-text">
+            <p class="first-line">
+              do you like rabbit?
+            </p>
+            <p class="second-line">
+              do you like oranges?
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="main-content">
@@ -24,6 +41,7 @@
         Main content
       </div>
     </div>
+  </main>
     <div class="footer">
       <div class="container">
         Footer

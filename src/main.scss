@@ -1,3 +1,7 @@
+@import "./partials/logo/logo.scss";
+@import "./sprites.scss";
+@import "./partials/menu-item/menu-item.scss";
+// @import "./partials/slider/slider.scss";
 body * {
   outline: 1px solid lightgrey;
 }
@@ -9,11 +13,29 @@ body * {
 
 .slider,
 .footer {
-  background-color: tomato;
+  // background-color: tomato;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 0px;
 }
+
+.main-menu {
+  display: flex;
+  column-gap: 67px;
+}
+
+.slider {
+  background-image: url(../img/big-orange-bg.png);
+  background-size: cover;
+  height: 400px;
+}
+
+ .slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+ }
