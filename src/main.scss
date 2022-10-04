@@ -1,6 +1,7 @@
 @import "./partials/logo/logo.scss";
 @import "./sprites.scss";
 @import "./partials/menu-item/menu-item.scss";
+@import "./partials/button/button.scss";
 
 // body * {
 //   outline: 1px solid lightgrey;
@@ -158,17 +159,18 @@ max-width: 1220px;
   font-size: 40px;
   font-weight: 100;
   color: #ff9c00;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .message p {
-  color: #fdce83;
+  color: orange;
   font-size: 22px;
 }
 
 .names {
   display: inline;
   width: 100px;
+  margin-top: 20px;
 }
 
 .textual {
@@ -188,27 +190,49 @@ max-width: 1220px;
   height: 150px;
   border: none;
   background-color: #f8f7f6;
+  box-shadow: 3px 2px 12px 2px rgba(104, 112, 118, 0.2) inset;
+  max-width: 1000px;
+  min-width: 1000px;
+  max-height: 155px;
+  min-height: 155px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif
 }
 
 #normal {
   height: 24px;
   border: none;
   background-color: #f8f7f6;
+  box-shadow: 3px 2px 12px 2px rgba(104, 112, 118, 0.2) inset;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif
 }
 
-button {
-  font-size: 25px;
-  color: wheat;
-  border: none;
-  width: 175px;
-  height: 55px;
-  background-color: #fb9c06;
-  margin: 25px 35px 50px 990px;
+// button {
+//   font-size: 25px;
+//   color: wheat;
+//   border: none;
+//   width: 175px;
+//   height: 55px;
+//   background-color: #fb9c06;
+//   margin: 25px 35px 50px 990px;
+// }
+
+// button:hover {
+//   position: relative;
+//   left: 4px;
+//   top: 4px;
+//   background-color: gray;
+// }
+
+.button {
+  margin: 20px 0 40px 900px;
 }
 
-button:hover {
-  position: relative;
-  top: 3px;
-  left: 3px;
-  background-color: #4b4f4f;
-}
+.pe {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+} 
