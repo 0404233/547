@@ -189,12 +189,11 @@ max-width: 1220px;
   border: none;
   background-color: #f8f7f6;
   box-shadow: 3px 2px 12px 2px rgba(104, 112, 118, 0.2) inset;
-  max-width: 1000px;
-  min-width: 1000px;
-  max-height: 155px;
-  min-height: 155px;
+  width: 1000px;
+  height: 155px;
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
+  resize: none;
 }
 
 #normal {
