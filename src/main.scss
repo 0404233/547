@@ -84,8 +84,6 @@ max-width: 1220px;
   max-width: 1220px;
   margin: 0 auto;  
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 70px;
 }
@@ -232,7 +230,6 @@ max-width: 1220px;
 .pe {
   height: 130px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
 } 
