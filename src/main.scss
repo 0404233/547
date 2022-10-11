@@ -113,7 +113,7 @@ main {
   margin: 0 auto;  
   display: flex;
   justify-content: space-around;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .worker {
@@ -158,7 +158,7 @@ main {
 }
 
 .rabbit-form-flex {
-  margin: 100px 0;
+  margin: 50px 0 90px 0;
 
   &__input {
     display: flex;
@@ -181,6 +181,7 @@ main {
 
   label {
     color: orange;
+    font-size: 20px;
   }
 }
 
