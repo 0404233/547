@@ -8,6 +8,7 @@ body * {
   &__content {
     max-height: 100px;
     overflow: hidden;
+    transition: max-height ease 1s;
   }
 
   &__toggler {
@@ -22,6 +23,7 @@ body * {
 
   &__input--open:checked ~ &__toggler--open {
     display: none;
+    color: blue;
   }
 
   &__input--close:checked ~ &__toggler--close {

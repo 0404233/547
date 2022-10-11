@@ -5,7 +5,8 @@ body * {
   width: 200px; }
   .accordion__content {
     max-height: 100px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: max-height ease 1s; }
   .accordion__toggler {
     width: 100%;
     display: inline-block;
@@ -13,7 +14,8 @@ body * {
   .accordion__input--open:checked ~ .accordion__content {
     max-height: 180vh; }
   .accordion__input--open:checked ~ .accordion__toggler--open {
-    display: none; }
+    display: none;
+    color: blue; }
   .accordion__input--close:checked ~ .accordion__toggler--close {
     display: none; }
   .accordion input {
