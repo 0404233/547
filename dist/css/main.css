@@ -1,4 +1,22 @@
 body * {
   outline: 1px solid lightgrey; }
 
+.accordion {
+  width: 200px; }
+  .accordion__content {
+    max-height: 100px;
+    overflow: hidden; }
+  .accordion__toggler {
+    width: 100%;
+    display: inline-block;
+    text-align: right; }
+  .accordion__input--open:checked ~ .accordion__content {
+    max-height: 180vh; }
+  .accordion__input--open:checked ~ .accordion__toggler--open {
+    display: none; }
+  .accordion__input--close:checked ~ .accordion__toggler--close {
+    display: none; }
+  .accordion input {
+    display: none; }
+
 /*# sourceMappingURL=maps/main.css.map */

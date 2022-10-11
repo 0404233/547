@@ -2,4 +2,34 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.accordion {
+  width: 200px;
+
+  &__content {
+    max-height: 100px;
+    overflow: hidden;
+  }
+
+  &__toggler {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  &__input--open:checked ~ &__content {
+    max-height: 180vh;
+  }
+
+  &__input--open:checked ~ &__toggler--open {
+    display: none;
+  }
+
+  &__input--close:checked ~ &__toggler--close {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+}
 
