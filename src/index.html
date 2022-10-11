@@ -21,8 +21,8 @@
       </div>
     </header>
     <main>
-    <div class="slider">
-      <div class="container slider-content">
+      <div class="slider">
+        <div class="container slider-content">
           <div class="slider-text">
             <p class="first-line-slider">
               do you like rabbit?
@@ -31,36 +31,37 @@
               do you like oranges?
             </p>
           </div>
+        </div>
       </div>
-    </div>
-    <div class="main-content">
-      <div class="container-readmore">
-        <p class="readmore">
+      <div class="main-content">
+        <div class="container-readmore">
+          <div class="readmore">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda eos soluta alias dolorum illum ab! Voluptatem corrupti eius ea sequi sunt, fuga ipsam labore necessitatibus laborum libero consequuntur ad.
-          <a href="">read more...</a>
-        </p>
-        <p class="readmore">
+            <a href="">read more...</a>
+          </div>
+          <div class="readmore">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda eos soluta alias dolorum illum ab! Voluptatem corrupti eius ea sequi sunt, fuga ipsam labore necessitatibus laborum libero consequuntur ad.
-          <a href="">read more...</a>
-        </p>
-        <p class="readmore">
+            <a href="">read more...</a>
+          </div>
+          <div class="readmore">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda eos soluta alias dolorum illum ab! Voluptatem corrupti eius ea sequi sunt, fuga ipsam labore necessitatibus laborum libero consequuntur ad.
-          <a href="">read more...</a>
-        </p>
-        <p class="readmore">
+            <a href="">read more...</a>
+          </div>
+          <div class="readmore">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda eos soluta alias dolorum illum ab! Voluptatem corrupti eius ea sequi sunt, fuga ipsam labore necessitatibus laborum libero consequuntur ad.
-          <a href="">read more...</a>
-        </p>
+            <a href="">read more...</a>
+          </div>
+        </div>
       </div>
       <div class="meet-team">
         Meet the team
       </div>
       <div class="animals">
         <div class="animal">
-          <div class="name">
+          <p class="worker">
             Hoof
             <span class="colortext">- Lead Designer</span>
-          </div>
+          </p>
           <div class="photo">
             <img src="/img/hoof.jpg" alt="Hoof">
           </div>
@@ -69,10 +70,10 @@
           </div>
         </div>
         <div class="animal">
-          <div class="name">
+          <p class="worker">
             Nibs
-            <span class="colortext">- CEO/Director</span>
-          </div>
+            <span class="colortext"> - CEO/Director</span>
+          </p>
           <div class="photo">
             <img src="/img/nibs.jpg" alt="Nibs">
           </div>
@@ -81,10 +82,10 @@
           </div>
         </div>
         <div class="animal">
-          <div class="name">
+          <p class="worker">
             Squawk
             <span class="colortext"> - Developer</span>
-          </div>
+          </p>
           <div class="photo">
             <img src="/img/squawk.jpg" alt="Squawk">
           </div>
@@ -93,31 +94,25 @@
           </div>
         </div>
       </div>
-      <div class="message">
-        <div class="heading">
-          Send us a message...
-        </div>
-        <div class="inputs">
-          <div class="names">
-            <div class="pe">
-              <p>Name:</p>
-              <p>Email:</p>
-              <p>Message:</p>
-            </div>
-            <!-- <p>Email:</p>
-            <p>Message:</p> -->
-          </div>
-          <div class="textual">
-            <input id="normal" type="text">
-            <input id="normal" type="text">
-            <textarea id="big"></textarea>
-          </div>
-        </div>
-        <div class="button">
-          @@include("./partials/button/_button.html")
-        </div>
-      </div>
+      <p class="send">Send a message...</p>
+      <form action="get" class="rabbit-form-flex">
+        <label for="name" class="rabbit-form-flex__input">
+          Name:
+          <input id="name" type="text">
+        </label>
+        <label for="email" class="rabbit-form-flex__input">
+          Email:
+          <input id="email" type="text">
+        </label>
+        <label for="message" class="rabbit-form-flex__input">
+          Message:
+          <textarea id="message" type="text"></textarea>
+        </label>
+      </form>
     </main>
+    <div class="button">
+      @@include("./partials/button/_button.html")
+    </div>
     <footer class="footer">
       <div class="container">
         COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
