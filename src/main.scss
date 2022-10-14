@@ -3,9 +3,9 @@
 @import "./partials/menu-item/menu-item.scss";
 @import "./partials/button/button.scss";
 
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 .container {
   max-width: 1220px;
@@ -26,7 +26,7 @@ body * {
 
 main {
   max-width: 1220px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .slider {
@@ -73,26 +73,51 @@ main {
   font-weight: 600;
 }
 
-.container-readmore {
-  max-width: 1220px;
-  margin: 0 auto;  
+.accordion-flex {
+  width: 1020px;
+  position: relative;
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.readmore {
-  margin: 0 25px 0 25px;
-  font-weight: 600;
-}
 
-.readmore a {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #ffac00;
+.accordion {
+  width: 200px;
+  position: absolute;
+  margin-top: 20px;
+
+  &__content {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height ease 1s;
+    background-color: #fff;
+  }
+
+  &__toggler {
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    color: orange;
+    background-color: #fff;
+  }
+
+  &__input--open:checked ~ &__content {
+    max-height: 180vh;
+  }
+
+  &__input--open:checked ~ &__toggler--open {
+    display: none;
+    color: blue;
+  }
+
+  &__input--close:checked ~ &__toggler--close {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
 }
 
 .meet-team {
@@ -101,7 +126,7 @@ main {
   font-size: 40px;
   font-weight: 100;
   color: #ff9c00;
-  margin-bottom: 40px;
+  margin: 150px 0 40px 0;
 }
 
 .colortext {
