@@ -29,6 +29,48 @@ main {
   margin: 0 auto;
 }
 
+.slider {
+  background-image: url(../img/big-orange-bg.png);
+  background-size: cover;
+  height: Min(30vw, 400px);
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+}
+
+ .slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+ }
+
+.slider-text {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 28px;
+}
+
+.first-line-slider {
+  background-color: #4b4f4f;
+  text-transform: uppercase;
+  color: #fb9c06;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.second-line-slider {
+  background-color: #fcc759;
+  text-transform: uppercase;
+  color: #6e6d6b;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+
 // .slider-wrapper {
 //   background-image: url(../img/big-orange-bg.png);
 //   background-size: cover;
