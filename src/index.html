@@ -1,168 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <div class="container header">
-        @@include("./partials/logo/_logo.html")
-        <nav class="main-menu">
-          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"home"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"about"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"work"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"blog"})
-          @@include("./partials/menu-item/_menu-item.html", {"menuitem":"contact"})
-        </nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>First project</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="container header">
+    @@include("./partials/logo/_logo.html")
+    <nav class="main-menu">
+      @@include("./partials/menu-item/_menu-item.html", {"menuitem":"home"})
+      @@include("./partials/menu-item/_menu-item.html", {"menuitem":"about"})
+      @@include("./partials/menu-item/_menu-item.html", {"menuitem":"work"})
+      @@include("./partials/menu-item/_menu-item.html", {"menuitem":"blog"})
+      @@include("./partials/menu-item/_menu-item.html", {"menuitem":"contact"})
+    </nav>
+  </header>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <div class="slider__text">
+        <p class="slider__line__first">
+          do you like rabbit?
+        </p>
+        <p class="slider__line__second">
+          do you like oranges?
+        </p>
       </div>
-      <div class="slider">
-        <div class="container slider-content">
-          <div class="slider-text">
-            <p class="first-line-slider">
-              do you like rabbit?
-            </p>
-            <p class="second-line-slider">
-              do you like oranges?
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-        <div class="accordion-flex">
-        <div>
-          <div class="accordion">
-            <input id="toggler-open-1" type="radio" class="accordion__input--open" name="toggler-1">
-            <input id="toggler-close-1" type="radio" class="accordion__input--close" name="toggler-1" checked>
-            <p class="accordion__content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores, voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla ipsam?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus consequatur repudiandae porro!
-            </p>
-            <label for="toggler-open-1" class="accordion__toggler accordion__toggler--open">
-              Read more...
-            </label>
-            <label for="toggler-close-1" class="accordion__toggler accordion__toggler--close">
-              Read less...
-            </label>
-          </div>
-        </div>
-        <div>  
-          <div class="accordion">
-            <input id="toggler-open-2" type="radio" class="accordion__input--open" name="toggler-2">
-            <input id="toggler-close-2" type="radio" class="accordion__input--close" name="toggler-2" checked>
-            <p class="accordion__content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores, voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla ipsam?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus consequatur repudiandae porro!
-            </p>
-            <label for="toggler-open-2" class="accordion__toggler accordion__toggler--open">
-              Read more...
-            </label>
-            <label for="toggler-close-2" class="accordion__toggler accordion__toggler--close">
-              Read less...
-            </label>
-          </div>  
-        </div>  
-        <div>
-          <div class="accordion">
-            <input id="toggler-open-3" type="radio" class="accordion__input--open" name="toggler-3">
-            <input id="toggler-close-3" type="radio" class="accordion__input--close" name="toggler-3" checked>
-            <p class="accordion__content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores, voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla ipsam?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus consequatur repudiandae porro!
-            </p>
-            <label for="toggler-open-3" class="accordion__toggler accordion__toggler--open">
-              Read more...
-            </label>
-            <label for="toggler-close-3" class="accordion__toggler accordion__toggler--close">
-              Read less...
-            </label>
-          </div>  
-        </div>
-        <div>  
-          <div class="accordion">
-            <input id="toggler-open-4" type="radio" class="accordion__input--open" name="toggler-4">
-            <input id="toggler-close-4" type="radio" class="accordion__input--close" name="toggler-4" checked>
-            <p class="accordion__content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores, voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla ipsam?
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus consequatur repudiandae porro!
-            </p>
-            <label for="toggler-open-4" class="accordion__toggler accordion__toggler--open">
-              Read more...
-            </label>
-            <label for="toggler-close-4" class="accordion__toggler accordion__toggler--close">
-              Read less...
-            </label>
-          </div>
-        </div>
-        </div>
-      <div class="meet-team">
-        Meet the team
-      </div>
-      <div class="animals">
-        <div class="animal">
-          <p class="worker">
-            Hoof
-            <span class="colortext">- Lead Designer</span>
-          </p>
-          <div class="photo">
-            <img src="/img/hoof.jpg" alt="Hoof">
-          </div>
-          <div class="description">
-            Hoof is our most talanted designer.  However he`s not the talkative type and I would advise not getting on the wrong side of him.
-          </div>
-        </div>
-        <div class="animal">
-          <p class="worker">
-            Nibs
-            <span class="colortext"> - CEO/Director</span>
-          </p>
-          <div class="photo">
-            <img src="/img/nibs.jpg" alt="Nibs">
-          </div>
-          <div class="description">
-            Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too.
-          </div>
-        </div>
-        <div class="animal">
-          <p class="worker">
-            Squawk
-            <span class="colortext"> - Developer</span>
-          </p>
-          <div class="photo">
-            <img src="/img/squawk.jpg" alt="Squawk">
-          </div>
-          <div class="description">
-            Squawk is no social bunny. But when it comes to programming he stands out from the crowd.
-          </div>
-        </div>
-      </div>
-      <p class="send">Send a message...</p>
-      <form action="get" class="rabbit-form-flex">
-        <label for="name" class="rabbit-form-flex__input">
-          Name:
-          <input id="name" type="text">
-        </label>
-        <label for="email" class="rabbit-form-flex__input">
-          Email:
-          <input id="email" type="text">
-        </label>
-        <label for="message" class="rabbit-form-flex__input">
-          Message:
-          <textarea id="message" type="text"></textarea>
-        </label>
-      </form>
-    </main>
-    <div class="button">
-      @@include("./partials/button/_button.html")
     </div>
-    <footer class="footer">
-      <div class="container">
-        COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
+  </div>
+  <main>
+    <div class="accordion-flex">
+      <div class="accordion">
+        <input id="toggler-open-1" type="radio" class="accordion__input--open" name="toggler-1">
+        <input id="toggler-close-1" type="radio" class="accordion__input--close" name="toggler-1" checked>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores,
+          voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla
+          ipsam?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut
+          perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus
+          consequatur repudiandae porro!
+        </p>
+        <label for="toggler-open-1" class="accordion__toggler accordion__toggler--open">
+          Read more...
+        </label>
+        <label for="toggler-close-1" class="accordion__toggler accordion__toggler--close">
+          Read less...
+        </label>
       </div>
-    </footer>
-  </body>
+      <div class="accordion">
+        <input id="toggler-open-2" type="radio" class="accordion__input--open" name="toggler-2">
+        <input id="toggler-close-2" type="radio" class="accordion__input--close" name="toggler-2" checked>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores,
+          voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla
+          ipsam?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut
+          perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus
+          consequatur repudiandae porro!
+        </p>
+        <label for="toggler-open-2" class="accordion__toggler accordion__toggler--open">
+          Read more...
+        </label>
+        <label for="toggler-close-2" class="accordion__toggler accordion__toggler--close">
+          Read less...
+        </label>
+      </div>
+      <div class="accordion">
+        <input id="toggler-open-3" type="radio" class="accordion__input--open" name="toggler-3">
+        <input id="toggler-close-3" type="radio" class="accordion__input--close" name="toggler-3" checked>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores,
+          voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla
+          ipsam?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut
+          perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus
+          consequatur repudiandae porro!
+        </p>
+        <label for="toggler-open-3" class="accordion__toggler accordion__toggler--open">
+          Read more...
+        </label>
+        <label for="toggler-close-3" class="accordion__toggler accordion__toggler--close">
+          Read less...
+        </label>
+      </div>
+      <div class="accordion">
+        <input id="toggler-open-4" type="radio" class="accordion__input--open" name="toggler-4">
+        <input id="toggler-close-4" type="radio" class="accordion__input--close" name="toggler-4" checked>
+        <p class="accordion__content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, incidunt! Deserunt optio ipsa quo maiores,
+          voluptatibus voluptates, tempora doloribus hic corporis eveniet iure quia. Est eius praesentium quidem nulla
+          ipsam?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam harum blanditiis voluptatem fugit ut
+          perferendis nobis iusto amet. Fuga expedita dicta dolores molestias, suscipit maxime ullam delectus
+          consequatur repudiandae porro!
+        </p>
+        <label for="toggler-open-4" class="accordion__toggler accordion__toggler--open">
+          Read more...
+        </label>
+        <label for="toggler-close-4" class="accordion__toggler accordion__toggler--close">
+          Read less...
+        </label>
+      </div>
+    </div>
+    <div class="meet-team">
+      Meet the team
+    </div>
+    <div class="animals">
+      <div class="animal">
+        <p class="worker">
+          Hoof
+          <span class="colortext">- Lead Designer</span>
+        </p>
+        <div class="photo">
+          <img src="/img/hoof.jpg" alt="Hoof">
+        </div>
+        <div class="description">
+          Hoof is our most talanted designer. However he`s not the talkative type and I would advise not getting on the
+          wrong side of him.
+        </div>
+      </div>
+      <div class="animal">
+        <p class="worker">
+          Nibs
+          <span class="colortext"> - CEO/Director</span>
+        </p>
+        <div class="photo">
+          <img src="/img/nibs.jpg" alt="Nibs">
+        </div>
+        <div class="description">
+          Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too.
+        </div>
+      </div>
+      <div class="animal">
+        <p class="worker">
+          Squawk
+          <span class="colortext"> - Developer</span>
+        </p>
+        <div class="photo">
+          <img src="/img/squawk.jpg" alt="Squawk">
+        </div>
+        <div class="description">
+          Squawk is no social bunny. But when it comes to programming he stands out from the crowd.
+        </div>
+      </div>
+    </div>
+    <p class="send">Send a message...</p>
+    <form action="get" class="rabbit-form-flex">
+      <label for="name" class="rabbit-form-flex__input">
+        Name:
+        <input id="name" type="text" autofocus>
+      </label>
+      <label for="email" class="rabbit-form-flex__input">
+        Email:
+        <input id="email" type="text">
+      </label>
+      <label for="message" class="rabbit-form-flex__input">
+        Message:
+        <textarea id="message" type="text"></textarea>
+      </label>
+    </form>
+  </main>
+  <div class="button">
+    @@include("./partials/button/_button.html")
+  </div>
+  <footer class="footer">
+    <div class="container">
+      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
+    </div>
+  </footer>
+</body>
+
 </html>

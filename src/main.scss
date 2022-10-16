@@ -29,7 +29,7 @@ main {
   margin: 0 auto;
 }
 
-.slider {
+.slider-wrapper {
   background-image: url(../img/big-orange-bg.png);
   background-size: cover;
   height: Min(30vw, 400px);
@@ -37,60 +37,60 @@ main {
   border-bottom: 5px solid orange;
 }
 
- .slider-content {
+ .slider {
   display: flex;
   align-items: center;
   justify-content: start;
   height: 100%;
+
+  &__text {
+    display: flex;
+    margin-left: 300px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28px;
+  }
+
+  &__line {
+    padding: 50px;
+
+    &__first {
+      background-color: #4b4f4f;
+      text-transform: uppercase;
+      color: #fb9c06;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  
+    &__second {
+      background-color: #fcc759;
+      text-transform: uppercase;
+      color: #6e6d6b;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
  }
 
-.slider-text {
-  display: flex;
-  margin-left: 180px;
-  padding: 0;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 28px;
-}
-
-.slider-text p {
-  margin: 0;
-}
-
-.first-line-slider {
-  background-color: #4b4f4f;
-  text-transform: uppercase;
-  color: #fb9c06;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.second-line-slider {
-  background-color: #fcc759;
-  text-transform: uppercase;
-  color: #6e6d6b;
-  font-size: 28px;
-  font-weight: 600;
-}
-
 .accordion-flex {
-  width: 1020px;
-  position: relative;
+    // width: 1020px;
+    // position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 
 .accordion {
   width: 200px;
-  position: absolute;
-  margin-top: 20px;
+  // position: absolute;
+  margin: auto;
 
   &__content {
+    font-weight: bolder;
     max-height: 100px;
     overflow: hidden;
-    transition: max-height ease 1s;
+    // transition: max-height ease 1s;
     background-color: #fff;
   }
 
@@ -108,7 +108,6 @@ main {
 
   &__input--open:checked ~ &__toggler--open {
     display: none;
-    color: blue;
   }
 
   &__input--close:checked ~ &__toggler--close {
@@ -126,7 +125,7 @@ main {
   font-size: 40px;
   font-weight: 100;
   color: #ff9c00;
-  margin: 150px 0 40px 0;
+  margin: 50px 0 40px 0;
 }
 
 .colortext {
@@ -147,7 +146,10 @@ main {
   text-align: center;
 }
 
-.photo img{
+.photo {
+  max-height: 300px;
+  max-width: 300px;
+  overflow: hidden;
   margin-bottom: 32px;
   padding: 0;
   border: 5px solid #ffb53f;
@@ -155,7 +157,7 @@ main {
 }
 
 .description {
-  max-width: 250px;
+  width: 250px;
 }
 
 .animal {
