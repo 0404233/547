@@ -48,11 +48,12 @@ main {
     margin-left: 300px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     row-gap: 28px;
   }
 
   &__line {
-    padding: 50px;
+    padding: 10px;
 
     &__first {
       background-color: #4b4f4f;
@@ -73,8 +74,7 @@ main {
  }
 
 .accordion-flex {
-    // width: 1020px;
-    // position: relative;
+  margin-top: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -82,12 +82,14 @@ main {
 
 
 .accordion {
-  // width: 200px;
-  // position: absolute;
+  width: 25%; 
+  padding-right: 15px;   
+  padding-left: 15px;
+
 
   &__content {
     font-weight: bolder;
-    max-height: 100px;
+    max-height: 130px;
     overflow: hidden;
     // transition: max-height ease 1s;
     background-color: #fff;
