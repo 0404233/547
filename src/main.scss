@@ -82,9 +82,8 @@ main {
 
 
 .accordion {
-  width: 200px;
+  // width: 200px;
   // position: absolute;
-  margin: auto;
 
   &__content {
     font-weight: bolder;
@@ -119,7 +118,7 @@ main {
   }
 }
 
-.meet-team {
+.big-text {
   text-align: center;
   text-decoration: underline;
   font-size: 40px;
@@ -166,15 +165,6 @@ main {
   align-items: center;
 }
 
-.send {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 40px;
-  font-weight: 100;
-  color: #ff9c00;
-  margin-bottom: 40px;
-}
-
 .rabbit-form {
   display: grid;
   grid-template-columns: max-content 1fr;
@@ -214,6 +204,12 @@ main {
 
 .button {
   margin: 20px 0 40px 900px;
+  background-color: #fb9c06;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 .footer {
