@@ -203,13 +203,19 @@ main {
 }
 
 .button {
-  margin: 20px 0 40px 900px;
+  margin: 0 0 40px 1400px;
   background-color: #fb9c06;
-  width: 200px;
+  width: 150px;
   height: 50px;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 40px;
+  font-size: 20px;
+
+  &:hover {
+    position: relative;
+    left: 3px;
+    top: 3px;
+    background-color: red;
+  }
 }
 
 .footer {
