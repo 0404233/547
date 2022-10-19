@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>First project</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  @@include('./partials/heading/_heading.html', {"type": "primary", "text":"Last News"})
+  @@include('./partials/heading/_heading.html', {"type": "primary", "text":"Main News"})
+  <span class="fa-solid fa-circle"></span>
+</body>
+
 </html>

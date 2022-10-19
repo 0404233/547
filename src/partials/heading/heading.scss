@@ -1,0 +1,22 @@
+@import "../../colors";
+
+.heading {
+    display: flex;
+    align-items: baseline;
+
+    &.primary {
+        color: var(--hightlight-color);
+
+        &:after {
+            border-color: $main-umderline;
+        }
+    }
+
+    &:after {
+        content: "";
+        border-bottom: 2px solid black;
+        display: block;
+        flex: 1 0 auto;
+        margin-left: 10px;
+    }
+}
