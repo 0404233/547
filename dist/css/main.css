@@ -1,4 +1,11 @@
 body * {
   outline: 1px solid lightgrey; }
 
+.rabbit-form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  margin-top: 40px; }
+
 /*# sourceMappingURL=maps/main.css.map */
