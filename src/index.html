@@ -20,8 +20,8 @@
       @@include("./partials/menu-item/_menu-item.html", {"menuitem":"contact"})
     </nav>
   </header>
-  <!-- <div class="slider-wrapper">
-    <div class="slider">
+  <div class="slider-wrapper">
+    <div class="container slider">
       <div class="slider__text">
         <p class="slider__line slider__line__first">
           do you like rabbit?
@@ -30,18 +30,6 @@
           do you like oranges?
         </p>
       </div>
-    </div>
-  </div> -->
-  <div class="slider">
-    <div class="container slider-content">
-        <div class="slider-text">
-          <p class="first-line-slider">
-            do you like rabbit?
-          </p>
-          <p class="second-line-slider">
-            do you like oranges?
-          </p>
-        </div>
     </div>
   </div>
   <main>
@@ -162,19 +150,22 @@
       </div>
     </div>
     <p class="big-text">Send a message...</p>
-    <form action="get" class="rabbit-form-flex">
-      <label for="name" class="rabbit-form-flex__input">
+    <form action="get" class="rabbit-form">
+      <label for="name" class="rabbit-form__input">
         Name:
-        <input id="name" type="text" autofocus>
+
       </label>
-      <label for="email" class="rabbit-form-flex__input">
+      <input id="name" type="text">
+      <label for="email" class="rabbit-form__input">
         Email:
-        <input id="email" type="text">
+
       </label>
-      <label for="message" class="rabbit-form-flex__input">
+      <input id="email" type="text">
+      <label for="message" class="rabbit-form__input">
         Message:
-        <textarea id="message" type="text"></textarea>
+
       </label>
+      <textarea id="message" type="text"></textarea>
     </form>
   </main>
   <button class="button">
