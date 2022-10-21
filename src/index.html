@@ -7,12 +7,35 @@
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
   <script src="./js/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/558b098477.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   @@include('./partials/heading/_heading.html', {"type": "primary", "text":"Last News"})
   @@include('./partials/heading/_heading.html', {"type": "primary", "text":"Main News"})
-  <span class="fa-solid fa-circle"></span>
+  @@include('./partials/text-with-icon/_text-with-icon.html', {
+    "text": "Some text",
+    "icons":"camera video"
+  })
+  @@include('./partials/text-with-icon/_text-with-icon.html', {
+    "text": "Some text",
+    "icons":"video"
+  })
+  @@include('./partials/text-with-icon/_text-with-icon.html', {
+    "text": "Some text",
+    "icons":"camera video"
+  })
+
+  @@include('./partials/list-link/_list-link.html', {
+    "text": "Some text",
+    "icons":"camera video",
+    "link": "#"
+  })
+  <!-- <i class="fa-solid fa-camera"></i> -->
+  
+ 
+ 
+<!-- <i class="fa-solid fa-video"></i> -->
 </body>
 
 </html>

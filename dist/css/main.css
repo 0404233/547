@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .heading {
   display: flex;
   align-items: baseline; }
@@ -14,6 +15,30 @@
 
 :root {
   --hightlight-color: blue; }
+
+.text-with-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px; }
+  .text-with-icon.camera:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f030";
+    color: #292929; }
+  .text-with-icon.video:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f03d";
+    order: 3;
+    color: #292929; }
+
+.list-link {
+  text-decoration: none;
+  color: #292929; }
+  .list-link:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: url("../img/Слой 1.png"), auto; }
 
 body * {
   outline: 1px solid lightgrey; }

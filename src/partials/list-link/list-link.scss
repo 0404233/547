@@ -1,0 +1,12 @@
+// @import "../../colors.scss";
+
+.list-link {
+    text-decoration: none;
+    color: $main-color;
+
+    &:hover {
+        color: $highlight;
+        text-decoration: underline;
+        cursor: url("/img/Слой 1.png"), auto;
+    }
+}

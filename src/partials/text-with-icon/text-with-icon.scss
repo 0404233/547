@@ -1,0 +1,21 @@
+.text-with-icon {
+display: flex;
+align-items: center;
+column-gap: 5px;
+// color: $main-color;
+
+    &.camera:after {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f030";
+        color: $main-color;
+    }
+
+    &.video:before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: "\f03d";
+        order: 3;
+        color: $main-color;
+    }
+}
