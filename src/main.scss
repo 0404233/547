@@ -2,4 +2,86 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.layuot {
+  margin: 0 auto;
+  display: grid;
+  grid-template: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%/ 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  height: 100vmax;
+  width: 1200px;
+}
 
+.main-contant {
+  grid-area: 1 / 1 / span 7 / span 6;
+  padding: 20px;
+  // background-color: rgba($color: rgb(255, 0, 0), $alpha: 0.15);
+}
+
+.sidebar {
+  grid-area: 1 / 7 / span 8 / span 2;
+  background-color: rgba($color: rgba(35, 24, 192, 0.596), $alpha: 0.15);
+}
+
+.slider-footer {
+  grid-area: 8 / 1 / 8 / span 6;
+  background-color: rgba($color: rgb(217, 255, 0), $alpha: 0.15);
+}
+
+.header {
+  background-color: #d7d8d9;
+  margin-bottom: 20px;
+
+  &__hot-themes {
+    font-size: 180%;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__euro-2016 {
+    font-size: 180%;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__el-classico {
+    font-size: 180%;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .header-hover:hover {
+    color: #fff;
+    background-color: #333333;
+  }
+}
+
+.slider {
+  height: 20%;
+  border-bottom: 5px solid red;
+  display: flex;
+  background-color: #f7f9fa;
+
+  &__img {
+    height: 100%;
+  }
+
+  &__textual-contant {
+    margin: 15px 70px 30px 30px;
+
+    &__title {
+      color: #c80000;
+      font-size: 230%;
+      padding-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 115%
+    }
+
+    &__toggler {
+      
+    }
+  }
+}
