@@ -15,7 +15,7 @@
     align-items: end; } }
 
 .main-menu__items {
-  display: none;
+  display: flex;
   column-gap: 10px;
   position: relative; }
   @media (max-width: 400px) {
@@ -63,6 +63,10 @@
 
 .main-menu__input:checked ~ .main-menu__items {
   display: flex; }
+
+@media (max-width: 400px) {
+  .main-menu__input:not(:checked) ~ .main-menu__items {
+    display: none; } }
 
 @media (max-width: 400px) {
   .main-menu__input:checked ~ .main-menu__overlay {
