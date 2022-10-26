@@ -1,39 +1,101 @@
-body * {
-  outline: 1px solid lightgrey;
-}
+// body * {
+//   outline: 1px solid lightgrey;
+// }
 
 .content-stub {
   height: 200vh;
 }
 
 .main-menu {
-  @media (max-width: 768px) {
-    position: fixed;
-top: 0;
-right: 0;
-width: 100vw;
-height: 100vh;
-background-color: rgb(168, 168, 168);
-z-index: 1;
-display: flex;
-flex-direction: column;
-align-items: end;
-  }
 
-
-
+  @media (max-width: 400px) {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #d1cece52;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
   &__items {
-    display: flex;
+    display: none;
     column-gap: 10px;
+    position: relative;
 
+    @media (max-width: 400px) {
     flex-direction: column;
     min-width: 60vw;
   }
+  }
 
   &__item {
-    background-color: yellow;
+    background-color: rgb(99, 201, 74);
     padding: 5px 10px;
     border: 1px solid grey;
     cursor: pointer;
   }
+
+  &__opener {
+    background-color: rgb(155, 154, 154);
+    font-size: 20px;
+    display: none;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-width: 400px) {
+      display: block;
+      background-color: rgb(155, 154, 154);
+      font-size: 20px;
+      display: flex;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked ~ &__opener .fa-bars {
+    display: none;
+  }
+
+  &__input:checked ~ &__opener .fa-xmark {
+    display: block;
+  }
+
+  &__input ~ &__opener .fa-xmark {
+    display: none;
+  }
+
+  &__input:checked ~ &__items {
+    display: flex;
+  }
+
+  // &__input:not(:checked) ~ &__items {
+  //   @media (max-width: 400px) {
+  //     display: none;
+  //   }
+  // }
+
+  &__input:checked ~ &__overlay {
+    @media (max-width: 400px) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(121, 84, 156, 0.5);
+    }
+  }
+
 }

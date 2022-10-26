@@ -1,32 +1,77 @@
-body * {
-  outline: 1px solid lightgrey; }
-
 .content-stub {
   height: 200vh; }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .main-menu {
     position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #a8a8a8;
     z-index: 1;
+    background-color: #d1cece52;
     display: flex;
     flex-direction: column;
     align-items: end; } }
 
 .main-menu__items {
-  display: flex;
+  display: none;
   column-gap: 10px;
-  flex-direction: column;
-  min-width: 60vw; }
+  position: relative; }
+  @media (max-width: 400px) {
+    .main-menu__items {
+      flex-direction: column;
+      min-width: 60vw; } }
 
 .main-menu__item {
-  background-color: yellow;
+  background-color: #63c94a;
   padding: 5px 10px;
   border: 1px solid grey;
   cursor: pointer; }
+
+.main-menu__opener {
+  background-color: #9b9a9a;
+  font-size: 20px;
+  display: none;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  @media (max-width: 400px) {
+    .main-menu__opener {
+      display: block;
+      background-color: #9b9a9a;
+      font-size: 20px;
+      display: flex;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center; } }
+
+.main-menu__input {
+  display: none; }
+
+.main-menu__input:checked ~ .main-menu__opener .fa-bars {
+  display: none; }
+
+.main-menu__input:checked ~ .main-menu__opener .fa-xmark {
+  display: block; }
+
+.main-menu__input ~ .main-menu__opener .fa-xmark {
+  display: none; }
+
+.main-menu__input:checked ~ .main-menu__items {
+  display: flex; }
+
+@media (max-width: 400px) {
+  .main-menu__input:checked ~ .main-menu__overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(121, 84, 156, 0.5); } }
 
 /*# sourceMappingURL=maps/main.css.map */
