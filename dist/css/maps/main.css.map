@@ -1,1 +1,1 @@
-{"version":3,"file":"../main.css","sources":["main.scss"],"sourcesContent":["body * {\r\n  outline: 1px solid lightgrey;\r\n}\r\n\r\n\r\n"],"names":[],"mappings":"AAAA,AAAA,IAAI,CAAC,CAAC,CAAC;EACL,OAAO,EAAE,mBAAmB,GAC7B"}
+{"version":3,"file":"../main.css","sources":["main.scss"],"sourcesContent":["body * {\n  outline: 1px solid lightgrey;\n}\n\n\n"],"names":[],"mappings":"AAAA,AAAA,IAAI,CAAC,CAAC,CAAC;EACL,OAAO,EAAE,mBAAmB,GAC7B"}

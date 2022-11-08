@@ -46,7 +46,7 @@ const serverConfig = {
   tunnel: false,
   host: 'localhost',
   port: 9000,
-  logPrefix: "IT-academy",
+  logPrefix: "0404233",
   notify: false
 };
 
