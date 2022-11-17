@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap");
 * {
   padding: 0;
@@ -81,8 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     top: -10;
     transform: translate(-50%);
-    height: 100px;
-    z-index: 2; }
+    height: 70px; }
   @media (max-width: 770px) {
     .header {
       top: 15px; } }
@@ -101,35 +101,41 @@ h1, h2, h3, h4, h5, h6 {
     .menu__list li:last-child::after {
       display: none; }
     .menu__list li:after {
-      content: '';
-      width: 4px;
-      height: 4px;
-      background-color: black;
-      border-radius: 50%;
+      content: '✪';
       position: absolute;
       right: 0;
-      top: 45%; }
+      top: 20%; }
 
 .menu__link {
   color: black;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  z-index: 3; }
 
 @media (max-width: 770px) {
   .menu__body {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -100%;
     left: 0;
     background-color: #ff5ea1;
-    padding-top: 135px; }
+    padding-top: 135px;
+    overflow: auto;
+    transition: all 0.3s ease 0s; }
+    .menu__body.active {
+      top: 0;
+      transition: all 0.3s ease 0s; }
   .menu__link {
     color: white;
     font-size: 35px; }
   .menu__list {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 500;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
@@ -138,8 +144,51 @@ h1, h2, h3, h4, h5, h6 {
       .menu__list li::after {
         display: none; } }
 
+@media (max-width: 767px) {
+  .header__logo {
+    position: absolute; } }
+
+@media (max-width: 767px) {
+  .icon-menu {
+    display: block;
+    position: fixed;
+    top: 18px;
+    right: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 50; }
+    .icon-menu span {
+      transition: all 0.3s ease 0s;
+      top: 8px;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #000; }
+      .icon-menu span:first-child {
+        top: 0; }
+      .icon-menu span:last-child {
+        bottom: 0;
+        top: auto; }
+    .icon-menu.active span {
+      transform: scale(0);
+      background-color: #fff; }
+      .icon-menu.active span:first-child {
+        transform: rotate(-45deg);
+        top: 8px; }
+      .icon-menu.active span:last-child {
+        transform: rotate(45deg);
+        bottom: 8px; } }
+
+body.lock {
+  overflow: hidden; }
+
 body * {
   outline: 1px solid lightgrey; }
+
+body {
+  background: url("../img/31617.jpg"); }
 
 .wrapper {
   overflow: hidden;
@@ -147,7 +196,8 @@ body * {
 
 .container {
   max-width: 1130px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  margin: 0 auto; }
 
 .page {
   position: absolute;
@@ -170,5 +220,64 @@ body * {
 
 .content {
   font-size: 20px; }
+
+.block {
+  text-align: center;
+  padding: 120px 0; }
+  @media (max-width: 600px) {
+    .block {
+      padding: 10px 0; } }
+  .block__icon {
+    margin: 40px 0; }
+  .block__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    margin-bottom: 20px;
+    line-height: 24px; }
+  .block__title-info {
+    font-size: 30px;
+    letter-spacing: 3.6px;
+    margin-bottom: 20px;
+    line-height: 24px; }
+  .block__text {
+    font-size: 25px;
+    line-height: 34px; }
+
+.lessons__column-item {
+  display: block; }
+  .lessons__column-item img {
+    width: 100%;
+    height: 100%; }
+
+.lessons__row {
+  display: flex;
+  align-items: center; }
+
+.lessons__column-text {
+  flex: 0 1 33.333%;
+  padding: 0 10px;
+  font-size: 30px; }
+  .lessons__column-text h3 {
+    padding: 0 0 40px 0; }
+  .lessons__column-text ul {
+    margin-top: 15px; }
+  .lessons__column-text li {
+    padding: 5px 0; }
+    .lessons__column-text li:before {
+      content: '✪'; }
+
+@media (max-width: 1330px) {
+  .lessons__column-item {
+    display: block;
+    width: 100%;
+    left: 0;
+    margin: 0 auto; }
+  .lessons__row {
+    display: block; }
+  .lessons__column-text {
+    font-size: 20px;
+    padding: 25px; } }
 
 /*# sourceMappingURL=maps/main.css.map */
