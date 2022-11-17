@@ -99,7 +99,8 @@ body {
 
 .lessons {
   &__column-item {
-    display: block;
+    flex: 0 1 77%;
+    padding: 0 10px;
 
     img {
       width: 100%;
@@ -112,15 +113,21 @@ body {
   &__row {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text-row {
+    flex: 0 1 33%;
+    padding: 0 10px;
+    font-size: 30px;
   }
 
   &__column-text {
-    flex: 0 1 33.333%;
     padding: 0 10px;
     font-size: 30px;
 
     h3 {
-      padding: 0 0 40px 0;
+      padding: 10px 0 40px 0;
     }
 
     ul {
@@ -134,6 +141,14 @@ body {
       &:before {
         content: '✪';
       }
+    }
+  }
+
+  &__text-image {
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -159,4 +174,6 @@ body {
     }
   }
 }
+
+
 

@@ -4,12 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.scss">
   <title>First project</title>
+  <!-- slider -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- slider -->
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous" defer></script>
+
+  <script src="./js/slider.js" defer></script>
+
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -44,39 +56,67 @@
             <div class="lessons__column-item">
               <img src="./img/vlog-1.png" alt="">
             </div>
-            <div class="lessons__column-text">
-              <h3>БЛОГИНГ</h3>
-              Хотите  развиваться?<br>
-              Не сидеть в телефоне просто так?<br>
-              Хотите проводить время в телефоне с пользой?⠀
-              <ul>
-                <li>Обрабатывать фото</li>
-                <li>Монтировать видео</li>
-                <li>Набирать тысячи подписчиков</li>
-                <li>Вести красивый Инстаграм и другие социальные сети</li>
-                <li>Не стесняться говорить на камеру⠀</li>
-              </ul>
+            <div class="lessons__text-row">
+              <div class="lessons__column-text">
+                <h3>БЛОГИНГ</h3>
+                Хотите  развиваться?<br>
+                Не сидеть в телефоне просто так?<br>
+                Хотите проводить время в телефоне с пользой?⠀
+                <ul>
+                  <li>Обрабатывать фото</li>
+                  <li>Монтировать видео</li>
+                  <li>Набирать тысячи подписчиков</li>
+                  <li>Вести красивый Инстаграм и другие социальные сети</li>
+                  <li>Не стесняться говорить на камеру</li>
+                </ul>
+              </div>
+              <div class="lessons__text-image">
+                <img src="./img/vlogging-contract-for-kids.jpg" alt="">
+              </div>
             </div>
           </div>
           <div class="lessons__row">
-            <div class="lessons__column-text">
-              <h3>МОДЕЛИНГ</h3>
-              Хотите  развиваться?<br>
-              Не сидеть в телефоне просто так?<br>
-              Хотите проводить время в телефоне с пользой?⠀
-              <ul>
-                <li>Обрабатывать фото</li>
-                <li>Монтировать видео</li>
-                <li>Набирать тысячи подписчиков</li>
-                <li>Вести красивый Инстаграм и другие социальные сети</li>
-                <li>Не стесняться говорить на камеру⠀</li>
-              </ul>
+            <div class="lessons__text-row">
+              <div class="lessons__column-text">
+                <h3>МОДЕЛИНГ</h3>
+                Моделинг- развиваем творческие способности, формируем стиль и чувство прекрасного, учим всем главным модельным навыкам. Образовательный процесс строится на комплексном подходе к обучению таким предметам, как фотопозирование, дефиле.
+                <ul>
+                  <li>Фотопозирование - развитие способностей профессионально работать на камеру, воплощать различные образы в зависимости от поставленной фотографом задачи. На занятиях  отрабатываются различные виды позирования, происходит обучение работе с дополнительными аксессуарами и взаимодействию на площадке с другими моделями.</li>
+                  <li>Дефиле - формирование навыков выхода на подиум, а также подготовка ребёнка к участию в модельных показах и конкурсах.</li>
+                </ul>
+              </div>
+              <div class="lessons__text-image">
+                <img src="./img/models.jpg" alt="">
+              </div>
             </div>
             <div class="lessons__column-item">
-              <img src="./img/vlog-1.png" alt="">
+              <img src="./img/models2.jpg" alt="">
+            </div>
+          </div>
+          <div class="lessons__row">
+            <div class="lessons__column-item">
+              <img src="./img/dance.jpg" alt="">
+            </div>
+            <div class="lessons__text-row">
+              <div class="lessons__column-text">
+                <h3>ХОРЕОГРАФИЯ</h3>
+                <ul>
+                  <li>а занятиях по хореографии происходит развитие навыков правильно двигаться под музыку, умения слушать и слышать мелодию, ощущать её душой и телом,  чувствовать ритм. </li>
+                  <li>В программу  входят элементы гимнастики, схемы перестроений с танцевальными элементами. Мы стараемся добиться присутствия пластичности, лёгкости, изящества каждого, а также  синхронности при коллективной работе. </li>
+                  <li>Умение раскрепощаться под музыку на занятиях позволит ему в дальнейшем комфортно чувствовать себя, как на подиуме и сцене.</li>
+                </ul>
+              </div>
+              <div class="lessons__text-image">
+                <img src="./img/dance2.jpg" alt="">
+              </div>
             </div>
           </div>
         </section>
+        <div class="your-class">
+          <div>your content</div>
+          <div>your content</div>
+          <div>your content</div>
+        </div>
       </div>
       <!-- @@include("./partials/footer.html")  -->
     </main>

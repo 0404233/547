@@ -24,3 +24,24 @@ function ibg(){
         $('.menu__body').toggleClass('active');
         $('body').toggleClass('lock');
     })
+
+
+
+
+    // Slider
+
+    $(document).ready(function(){
+        $('.your-class').slick({
+          autoplay: true,
+          autoplaySpeed: 10000,
+    
+        });
+      });
+
+      $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
