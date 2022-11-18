@@ -31,25 +31,35 @@ function ibg(){
     // Slider
 
     // $(document).ready(function(){
-    //     $('.your-class').slick({
-    //       autoplay: true,
-    //       autoplaySpeed: 10000,
-    
-    //     });
-    //   });
-
-    //   $('.fade').slick({
-    //     dots: true,
+    //   $('.your-class').slick({
     //     infinite: true,
-    //     speed: 500,
-    //     fade: true,
-    //     cssEase: 'linear'
+    //     dots: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1
+  
     //   });
+    // });
+
+    // Adaptive
 
 
-    $('.single-item').slick({
+    $('.slider').slick({
       infinite: true,
       dots: true,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
     });
