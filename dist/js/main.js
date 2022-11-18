@@ -30,18 +30,26 @@ function ibg(){
 
     // Slider
 
-    $(document).ready(function(){
-        $('.your-class').slick({
-          autoplay: true,
-          autoplaySpeed: 10000,
+    // $(document).ready(function(){
+    //     $('.your-class').slick({
+    //       autoplay: true,
+    //       autoplaySpeed: 10000,
     
-        });
-      });
+    //     });
+    //   });
 
-      $('.fade').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+    //   $('.fade').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     fade: true,
+    //     cssEase: 'linear'
+    //   });
+
+
+    $('.single-item').slick({
+      infinite: true,
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
