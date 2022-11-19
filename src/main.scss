@@ -336,24 +336,52 @@ body {
 
 .slick-next {
   right: 0;
-  background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
+
+  &:hover {
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
+  }
+ 
 
   &::before {
     content: '\203A';
+    color: #000;
     height: 200px;
     height: 100%;
+    font-size: 100px;
+
+    @media(max-width: 600px) {
+      font-size: 50px;
+    }
   }
 }
 
 .slick-prev {
   left: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
+  }
 
   &::before {
     content: '\2039';
+    color: #000;
     height: 200px;
     height: 100%;
+    font-size: 100px;
+
+    transition: all 3s ease 0s;
+
+    @media(max-width: 600px) {
+      font-size: 50px;
+    }
   }
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
 }
 
 
