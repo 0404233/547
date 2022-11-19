@@ -11,9 +11,6 @@
   <title>First project</title>
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-    crossorigin="anonymous" defer></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
@@ -21,7 +18,7 @@
 <body>
   <div class="wrapper">
     <main class="page">
-      @@include("./partials/header.html")
+      @@include("./partials/_header.html")
       <div class="main-screen">
         <div class="main-screen__bg ibg">
           <img src="./img/ffdfdfdfdf.png" alt="" class="imagge">
@@ -137,11 +134,19 @@
               <div class="subscribe__logo">
                 <img src="./img/logo.png" alt="" class="subscribe__logo">
               </div>
-              <div class="subscribe__label">SUPERSTARPRODUCTION</div>
+              <div class="subscribe__label">
+                <h2>SUPERSTARPRODUCTION</h2>
+                <p>Вы можете связаться с нами по номеру:
+                  <a href="tel: +375 (44) 4444444" name="num"> +375 (44) 4444444</a>
+                </p>
+                <p>Или вы можете оставить свой номер телефона. <br> Мы с вами свяжемся в ближайшее время</p>
+              </div>
             </div>
             <div class="subscribe__form">
-                <input type="text" placeholder="Email" class="subscribe__input">
-                <button class="subscribe__button">Subscribe</button>
+                <input type="number" placeholder="+375(..)......." class="subscribe__input">
+                <button class="subscribe__button">
+                  @@include("./partials/button/_button.html")
+                </button>
             </div>
           </div>
         </div>
