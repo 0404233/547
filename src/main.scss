@@ -323,14 +323,15 @@ body {
   z-index: 1;
   cursor: pointer;
   height: 100%;
+  width: 30px;
 
-  background-color: #9e00ff;
-  width: 50px;
+  
   opacity: 0.5;
 }
 
 .slick-next {
   right: 0;
+  background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
 
   &::before {
     content: '\203A';
@@ -341,6 +342,7 @@ body {
 
 .slick-prev {
   left: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(158,0,255,1) 36%);
 
   &::before {
     content: '\2039';
