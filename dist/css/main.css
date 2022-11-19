@@ -622,13 +622,18 @@ body {
       width: 250px;
       height: 25px;
       font-size: 15px;
-      display: block; }
+      display: block;
+      appearance: none;
+      -moz-appearance: textfield; }
     .subscribe__label h2 {
       padding: 35px 0 20px 0;
       font-size: 15px; }
     .subscribe__label p {
       font-size: 15px;
       line-height: 20px; } }
+
+.subscribe__input::-webkit-inner-spin-button {
+  display: none; }
 
 .logo {
   max-height: 70px; }
