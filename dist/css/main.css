@@ -584,7 +584,7 @@ body {
     max-height: 100%; }
 
 .subscribe {
-  margin: 100px 0; }
+  padding: 100px 0; }
   .subscribe__body {
     display: flex;
     align-items: center;
