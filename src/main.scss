@@ -19,8 +19,9 @@ $fontfamily: "Caveat";
 // }
 
 body {
-  background: url('./img/bg.jpg') 0 0/100% 200%;
+  background: url('./img/bg.jpg') 0 0/100% 200%;  
 }
+
 
 .wrapper {
   overflow: hidden;
@@ -67,15 +68,20 @@ body {
 
 .content {
   font-size: 20px;
+  padding: 60px 0 0 0;
+
+  @media (max-width: 600px) {
+    padding: 10px 0 0 0;
+  }
 }
 
 
 .block {
   text-align: center;
-  padding: 120px 0;
+  padding: 0 0 60px 0;
 
   @media (max-width: 600px) {
-    padding: 10px 0;
+    padding: 0 0 10px 0;
   }
 
   &__icon {
@@ -308,8 +314,8 @@ body {
 
 
 .slick-slider {
-  // width: 80vw;
-  margin: 50px 0 50px 0;
+  width: 99vw;
+  margin: 50px 0px 50px 0px;
   position: relative;
 
   &__content {
