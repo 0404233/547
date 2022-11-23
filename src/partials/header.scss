@@ -1,9 +1,6 @@
 .header {
-    position: absolute;
     width: 100%;
-    z-index: 1;
-    left: 0;
-    top: 35px;
+    top: 0;
 
     &__row {
         display: flex;
@@ -29,7 +26,7 @@
 }
 
 .menu {
-    
+
     &__list {
         display: flex;
 
@@ -39,14 +36,19 @@
 
             &:nth-child(2) {
                 padding: 0 80px 0 40px;
+
                 &::after {
                     display: none
                 }
-            };
+            }
+
+            ;
 
             &:nth-child(3) {
                 padding: 0 40px 0 80px;
-            };
+            }
+
+            ;
 
             &:last-child {
                 &::after {
@@ -56,6 +58,7 @@
 
             &:after {
                 content: '✪';
+                color: #CBB26A;
                 position: absolute;
                 right: 0;
                 top: 20%;
@@ -65,7 +68,12 @@
     }
 
     &__link {
-        color: black;
+        color: #CBB26A;
+        background: #CBB26A;
+        background: linear-gradient(to left, #CBB26A 21%, #FFE085 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 700;
@@ -73,7 +81,47 @@
         z-index: 3;
 
         &:hover {
-            color: rgb(255, 0, 212);
+            background-image: linear-gradient(90deg, #CBB26A 0%, #FFE085 25%, #CBB26A 75%, #FFE085 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: 1s linear 0s infinite alternate gradient;
+        }
+
+        @keyframes gradient {
+            // 0% {
+            //     background-image: linear-gradient(90deg, #CBB26A 0%, #FFE085 25%, #CBB26A 75%, #FFE085 100%);
+            // }
+
+            // 25% {
+            //     background-image: linear-gradient(90deg, #CBB26A 10%, #FFE085 35%, #CBB26A 85%, #FFE085 110%);
+            // }
+
+            // 50% {
+            //     background-image: linear-gradient(90deg, #CBB26A 20%, #FFE085 45%, #CBB26A 955%, #FFE085 10%);
+            // }
+
+            // 75% {
+            //     background-image: linear-gradient(90deg, #CBB26A 20%, #FFE085 45%, #CBB26A 95%, #FFE085 20%);
+            // }
+
+            // 100% {
+            //     background-image: linear-gradient(90deg, #CBB26A 0%, #FFE085 25%, #CBB26A 75%, #FFE085 100%);
+            // }
+
+
+
+            from {
+                background-image: linear-gradient(90deg, #CBB26A 0%, #FFE085 25%, #CBB26A 75%, #FFE085 100%);
+            } to {
+                background-image: linear-gradient(90deg, #FFE085 0%, #CBB26A 25%, #FFE085 75%, #CBB26A 100%);
+            }
+
+
+
+
+            // 50% {
+            //     background-image: linear-gradient(90deg, #FFE085 0%, #CBB26A 25%, #FFE085 75%, #CBB26A 100%);
+            // }
         }
     }
 
@@ -84,11 +132,11 @@
             height: 100%;
             top: -100%;
             left: 0;
-            background: url('./img/bg.jpg')  0 0/100% 100%;
+            background: url('./img/bg.jpg') 0 0/100% 100%;
             padding-top: 135px;
             overflow: auto;
             transition: all 0.3s ease 0s;
-            
+
             &.active {
                 top: 0;
                 transition: all 0.3s ease 0s;
@@ -108,7 +156,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-    
+
 
             li {
                 padding: 0 0 35px 0 !important;
@@ -138,7 +186,7 @@
         height: 18px;
         cursor: pointer;
         z-index: 50;
-        
+
         span {
             transition: all 0.3s ease 0s;
             top: 8px;
@@ -147,28 +195,28 @@
             width: 100%;
             height: 2px;
             background-color: #000;
-    
+
             &:first-child {
                 top: 0;
             }
-    
+
             &:last-child {
                 bottom: 0;
                 top: auto;
             }
         }
-    
+
         &.active {
-    
+
             span {
                 transform: scale(0);
                 background-color: #000;
-    
+
                 &:first-child {
                     transform: rotate(-45deg);
                     top: 8px;
                 }
-    
+
                 &:last-child {
                     transform: rotate(45deg);
                     bottom: 8px;
