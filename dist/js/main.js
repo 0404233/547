@@ -19,13 +19,20 @@ ibg();
 // });
 
 
+$('.menu__link').click(function (event) {
+  event.stopPropagation()
+  $('.icon-menu').toggleClass('active');
+  $('.menu__body').toggleClass('active');
+  $('body').toggleClass('lock');
+})
+
+
 $('.icon-menu').click(function (event) {
   event.stopPropagation()
   $(this).toggleClass('active');
   $('.menu__body').toggleClass('active');
   $('body').toggleClass('lock');
 })
-
 
 
 // Slider
