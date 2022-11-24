@@ -512,6 +512,9 @@ body {
   background-color: black; }
 
 .wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
   overflow: hidden;
   min-height: 100%; }
 
@@ -521,10 +524,9 @@ body {
   margin: 0 auto; }
 
 .page {
+  position: relative;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column; }
 
@@ -769,5 +771,37 @@ body {
     @media (max-width: 600px) {
       .slick-prev::before {
         font-size: 50px; } }
+
+.button-on-top a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #CBB26A;
+  position: fixed;
+  top: 93vh;
+  left: 96vw;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.1s linear; }
+  .button-on-top a:hover {
+    width: 43px;
+    height: 43px;
+    opacity: 1; }
+  .button-on-top a img {
+    width: 70%;
+    opacity: 0.5; }
+  @media (max-width: 1350px) {
+    .button-on-top a {
+      width: 30px;
+      height: 30px;
+      top: 95vh;
+      left: 96vw; } }
+
+@media (max-width: 770px) {
+  .button-on-top {
+    display: none; } }
 
 /*# sourceMappingURL=maps/main.css.map */
