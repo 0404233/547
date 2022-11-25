@@ -48,11 +48,6 @@
                 }
             }
 
-            &:nth-child(3) {
-                padding: 0 40px 0 80px;
-            }
-
-
             &:last-child {
                 &::after {
                     display: none;
@@ -192,10 +187,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin-top: 70px;
 
 
             li {
-                padding: 0 0 35px 0 !important;
+                margin: 0 0 55px 0;
+
+                &:nth-child(2) {
+                    padding: 0 0 0 0;
+                }
 
                 &::after {
                     display: none;
