@@ -10,7 +10,7 @@ if (login === 'Админ') {
     } else {
         alert('Неверный пароль');
     }
-
+    
 } else if (login === '' || login === null) {
     alert('Отменено');
 } else {
