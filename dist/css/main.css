@@ -1,4 +1,5 @@
 body * {
-  outline: 1px solid lightgrey; }
+  outline: 1px solid lightgrey;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=maps/main.css.map */
